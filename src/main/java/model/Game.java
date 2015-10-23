@@ -6,12 +6,11 @@ public class Game {
 	
 	private final Player[] players;
 	
-	private final Field field;
+	private final Field field = new Field();
 
-	public Game(Player[] players, Field field) {
+	public Game(Player[] players) {
 		super();
 		this.players = players;
-		this.field = field;
 	}
 
 	public static String getName() {
